@@ -1,11 +1,11 @@
-import os
 import asyncio
 import logging
-from dotenv import load_dotenv
+
 import aiogram
 from aiogram.fsm.storage.memory import MemoryStorage
-from src.router import router
+
 from bot import bot
+from src.router import router
 
 
 async def main():
