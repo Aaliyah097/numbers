@@ -10,7 +10,7 @@ from settings import Settings
 
 class BaseRepository:
     def __init__(self, db: AsyncEngine, **kwargs) -> None:
-        self._session_maker = sessionmaker(db, expire_on_commit=False, class_=AsyncSession)
+        self._session_maker = sessionmaker(db, expire_on_commit=False, class_=AsyncSession)  # type: ignore
         self._logger = getLogger(self.__class__.__name__)
         super().__init__(**kwargs)
 
