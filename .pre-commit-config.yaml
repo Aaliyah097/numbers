@@ -17,3 +17,8 @@ repos:
         pass_filenames: false
         types:
           - "python"
+      - id: run-tests
+        name: Run Tests
+        entry: pytest
+        language: python
+        types: [python]
